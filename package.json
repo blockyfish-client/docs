@@ -4,5 +4,8 @@
     "type": "git",
     "url": "git+https://github.com/blockyfish-client/Docs.git"
   },
-  "homepage": "https://github.com/blockyfish-client/Docs#readme"
+  "homepage": "https://github.com/blockyfish-client/Docs#readme",
+  "devDependencies": {
+    "retypeapp": "^2.4.0"
+  }
 }
