@@ -1,11 +1,17 @@
 input: .
 output: .retype
-url: # Add your website address here
+url: https://docs-blockyfish.netlify.app/
 branding:
-  title: Project Name
+  title: Blockyfish Client
   label: Docs
-links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+  logo: assets/blockyfishclientlogo.png
+favicon: assets/blockyfishclientlogo.png
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "Enjoy ❤️"
+links:
+  - text: Download
+    link: https://blockyfish.netlify.app
+    icon: download
+    target: blank
+meta:
+  title: " | Blockyfish Client Docs"
