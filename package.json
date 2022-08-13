@@ -4,12 +4,5 @@
     "type": "git",
     "url": "git+https://github.com/blockyfish-client/Docs.git"
   },
-  "homepage": "https://github.com/blockyfish-client/Docs#readme",
-  "devDependencies": {
-    "gitbook-cli": "^2.3.2",
-    "graceful-fs": "4.2.0"
-  },
-  "resolutions": {
-    "graceful-fs": "4.2.0"
-  }
+  "homepage": "https://github.com/blockyfish-client/Docs#readme"
 }
