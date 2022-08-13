@@ -1,0 +1,12 @@
+{
+  "name": "blockyfish-docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockyfish-client/Docs.git"
+  },
+  "homepage": "https://github.com/blockyfish-client/Docs#readme",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  }
+}
