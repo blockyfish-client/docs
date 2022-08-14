@@ -2,6 +2,7 @@
 label: Building
 icon: package
 order: 998
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Building the app
 If you are familiar with Git and Node.js, you can try building the app yourself.

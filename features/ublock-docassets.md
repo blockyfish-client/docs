@@ -1,6 +1,7 @@
 ---
 icon: chevron-right
 order: 999
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Extensions
 Blockyfish Client comes with two Chrome Extensions that can be toggled on or off in the settings. It relies on [electron-chrome-extensions](https://github.com/samuelmaddock/electron-browser-shell) to provide the necessary Extension APIs. 

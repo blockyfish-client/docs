@@ -2,6 +2,7 @@
 label: Welcome
 icon: home
 order: 1000
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Welcome
 ![](https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png)

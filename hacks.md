@@ -1,7 +1,7 @@
 ---
 icon: code
 title: Hacks
-image: 
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Hack scripts
 These scripts are for people who cannot use the Blockyfish Client for any reasons. 

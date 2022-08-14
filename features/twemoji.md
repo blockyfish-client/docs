@@ -1,6 +1,7 @@
 ---
 icon: chevron-right
 order: 998
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Twitter emojis
 Blockyfish Client comes with an option to use Twitter emojis instead of the system's default emoji. 

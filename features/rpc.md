@@ -1,6 +1,7 @@
 ---
 icon: chevron-right
 order: 1000
+image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Discord Rich Presence
 Blockyfish Client comes with a Discord Rich Presence integration that allows your friends on Discord to see that you are playing the game. 
