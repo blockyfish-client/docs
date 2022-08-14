@@ -1,7 +1,7 @@
 ---
 label: Building
 icon: package
-order: 1
+order: 998
 ---
 # Building the app
 If you are familiar with Git and Node.js, you can try building the app yourself.

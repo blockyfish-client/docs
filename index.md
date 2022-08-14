@@ -11,6 +11,10 @@ order: 1000
 
 ----
 
+!!!warning
+Sorry about the mess. Docs are still a work-in-progess. 
+!!!
+
 ## Get started
 Download Blockyfish Client from the [official website](https://blockyfish.netlify.app).
 !!!primary
