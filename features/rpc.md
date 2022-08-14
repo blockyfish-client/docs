@@ -1,3 +1,6 @@
+---
+icon: chevron-right
+---
 # Discord Rich Presence
 Blockyfish Client comes with a Discord Rich Presence integration that allows your friends on Discord to see that you are playing the game. 
 
@@ -30,6 +33,7 @@ console.log("state: " + rpc_state)
 ```
 
 ### Other state checking stuff
+
 Checks to see if the URL contains `/u/`. If it does, then remove all the `https://beta.deeeep.io/u/` and `?host=randomstring` stuff and then set the RPC status to the remaining string, which will be the username.
 
 For other states, check to see if `forum`, `store`, and `inventory` are in the URL and set the RPC status accordingly. 

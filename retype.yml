@@ -9,6 +9,10 @@ favicon: static/blockyfishclientlogo.png
 footer:
   copyright: "Enjoy ❤️"
 links:
+  - text: Source
+    link: https://github.com/blockyfish-client/Desktop-Client
+    icon: mark-github
+    target: blank
   - text: Download
     link: https://blockyfish.netlify.app
     icon: download
