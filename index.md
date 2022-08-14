@@ -28,8 +28,8 @@ For a more detailed explaination on these features, please see the [features sec
 - [x] Exit confirmation dialog  
 - [x] Borderless window  
 - [x] Esc key can pause and unpause the game  
+- [x] Auto-loading in forums  
 - [ ] Auto-fill name  
 - [ ] Desktop notifications for forum replies  
 - [ ] Account switcher  
 - [ ] Custom themes  
-- [ ] Auto-loading in forums  
