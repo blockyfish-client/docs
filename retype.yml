@@ -4,8 +4,8 @@ url: https://docs-blockyfish.netlify.app/
 branding:
   title: Blockyfish Client
   label: Docs
-  logo: assets/blockyfishclientlogo.png
-favicon: assets/blockyfishclientlogo.png
+  logo: static/blockyfishclientlogo.png
+favicon: static/blockyfishclientlogo.png
 footer:
   copyright: "Enjoy ❤️"
 links:
@@ -15,3 +15,5 @@ links:
     target: blank
 meta:
   title: " | Blockyfish Client Docs"
+markdown:
+  lineBreaks: hard

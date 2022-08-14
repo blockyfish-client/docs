@@ -1,23 +1,7 @@
----
-label: Welcome
-icon: home
-order: 1
----
-# Welcome
-![](https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png)
+# Features
+What makes Blockyfish Client special
 
-----
-<p align="center">Blockyfish client is an alternative to the Deeeep.io Desktop Client. It is built with ElectronJS and features Discord Rich Presence and Doctorpus Assets.</p>  
-
-----
-
-## Get started
-Download Blockyfish Client from the [official website](https://blockyfish.netlify.app).
-!!!primary
-Do not run files that people send you directly. Only download from the website. 
-!!!
-
-## Features
+For a more detailed explaination on these features, please see the features section. 
 +++ :icon-checklist: Current
 - Detailed rich presence for Discord [!badge variant="primary" text="Fully working"]
 - Togglable adblocker [!badge variant="primary" text="Fully working"]
