@@ -3,6 +3,8 @@ icon: code
 title: Hacks
 ---
 # Hack scripts
+These scripts are for people who cannot use the Blockyfish Client for any reasons. 
+
 ## Enabling Commands!
 1. Go to [beta.deeeep.io](https://beta.deeeep.io)
 2. Open DevTools (yes that's what it's called) by using ctrl/cmd + shift + I (that's an i not an L)
