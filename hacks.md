@@ -1,6 +1,7 @@
 ---
 icon: code
 title: Hacks
+image: 
 ---
 # Hack scripts
 These scripts are for people who cannot use the Blockyfish Client for any reasons. 
