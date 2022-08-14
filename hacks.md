@@ -1,6 +1,7 @@
 ---
 icon: code
 title: Hacks
+order: 997
 image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Built-in Hacks
