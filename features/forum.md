@@ -1,7 +1,7 @@
 ---
 icon: chevron-right
 order: 995
-title: Forum Notifications
+title: Forum stuff
 image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Forum Notification Badges
@@ -44,4 +44,28 @@ if (matches(msg, "notifs:")) {
         win.setOverlayIcon(path.join(__dirname, 'img/9_plus.png'), 'Over 9 notifications')
     }
 }
+```
+
+# Forum auto-loading
+When you scroll down, posts will keep loading automatically so you don't have to press the `load more` button. 
+
+## How it works
+When the load more button scrolls into view, the script automatically presses it. 
+```js
+function isInViewport(e) {
+    const rect = e.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+document.querySelector('#app > div.ui > div > div.el-row.header.justify-between.flex-nowrap > div:nth-child(2) > div > div:nth-child(3) > button').addEventListene("click", () => {
+    document.querySelector('#app > div.vfm.vfm--inset.vfm--fixed.modal > div.vfm__container.vfm--absolute.vfm--inset.vfm--outline-none.modal-container > div > div > div').addEventListener("scroll", function() {
+        if (isInViewport(document.querySelector('#app > div.vfm.vfm--inset.vfm--fixed.modal > div.vfm__container.vfm--absolute.vfm--inset.vfm--outline-none.modal-container > div > div > div > div > div.footer > button'))) {
+            document.querySelector('#app > div.vfm.vfm--inset.vfm--fixed.modal > div.vfm__container.vfm--absolute.vfm--inset.vfm--outline-none.modal-container > div > div > div > div > div.footer > button').click()
+        }
+    })
+})
 ```
