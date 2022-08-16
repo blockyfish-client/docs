@@ -1,7 +1,7 @@
 ---
 label: Changelogs
 icon: history
-order: 996
+order: 995
 image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
 # Changelogs
