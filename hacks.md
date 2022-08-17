@@ -134,19 +134,77 @@ game.currentScene.entityManager.animalsList[i].sprite.scale.y = game.currentScen
 }, 10);
 ```
 
-### **Super thresher**
-!!!
-Hold down control + shift then click. You need two boost to do this. 
-!!!
+### **Boost hacks**
+Thresher, Beluga, and Beaked Whale has control + shift + click
+
+Walking animals can control + shift + click to jump really high while walking
+
+Every animal with a charged boost can control + click to use the charge boost ability instantly
+
+Walking animals can alt + click to get off the ground
 ```
-window.addEventListener("click",
+var ctrl_overlay = document.createElement('div')
+document.querySelector('div.game').insertBefore(ctrl_overlay, document.querySelector('div.game').children[0])
+ctrl_overlay.outerHTML = '<div id="ctrl-overlay" style="width: 100%;height: 100%;position: absolute display: block;z-index:10000;pointer-events:none;"></div>'
+function showCtrlOverlay(e) {
+    if (e.ctrlKey || e.altKey) {
+        if (game.currentScene.myAnimal._visibleFishLevel != 101) {
+            document.getElementById('ctrl-overlay').style.pointerEvents = 'all'
+        }
+        else if (!e.shiftKey) {
+            if (game.currentScene.myAnimal._visibleFishLevel == 101)
+            document.getElementById('ctrl-overlay').style.pointerEvents = 'all'
+        }
+        else {
+            document.getElementById('ctrl-overlay').style.pointerEvents = 'none'
+        }
+    }
+}
+async function superShot() {
+    game.inputManager.handleLongPress(1)
+    setTimeout(() => {
+        game.inputManager.handleLongPress(5000)
+    }, 50)
+    setTimeout(() => {
+        game.inputManager.handleLongPress(5000)
+    }, 100)
+    setTimeout(() => {
+        game.inputManager.handleLongPress(5000)
+    }, 150)
+    setTimeout(() => {
+        game.inputManager.handleLongPress(5000)
+    }, 200)
+}
+window.addEventListener("keydown",
+function(e) {
+        showCtrlOverlay(e)
+    },
+    false);
+    window.addEventListener("click",
     function(e) {
         if (e.ctrlKey) {
-            if (e.shiftKey && game.currentScene.myAnimal._visibleFishLevel == 101) {
+            if (e.shiftKey && (game.currentScene.myAnimal._visibleFishLevel == 109 || game.currentScene.myAnimal._visibleFishLevel == 107)) {
+                console.log('hi')
+                superShot()
+            }
+            else if (e.shiftKey && game.currentScene.myAnimal._visibleFishLevel != 101) {
+                game.inputManager.handleLongPress(-5)
+            }
+            else {
                 game.inputManager.handleLongPress(5000)
             }
         }
+        if (e.altKey) {
+            game.inputManager.handleLongPress(350)
+        }
     },
+    false);
+    window.addEventListener("keyup",
+    function(e) {
+        if (!e.ctrlKey && !e.altKey) {
+        document.getElementById('ctrl-overlay').style.pointerEvents = 'none'
+    }
+},
 false);
 ```
 
