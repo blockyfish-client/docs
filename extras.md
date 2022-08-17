@@ -38,6 +38,20 @@ Examples
 `https://apibeta.deeeep.io/animals/fish`
 `https://apibeta.deeeep.io/animals/0`
 
+### emotes
+- `<id>` — Number ID of an emote. 
+- `<userid>` — ID of user. Username doesn't work. 
+
+Find an emote by ID
+`https://apibeta.deeeep.io/emotes/<id>`
+
+Find emotes by creator
+^Currently does not work^
+`https://apibeta.deeeep.io/emotes/creator/<userid>`
+
+Examples
+`https://apibeta.deeeep.io/emotes/36`
+
 ### maps
 - `<id>` — Number ID of a map. 
 - `<string_id>` — String ID of a map. 
@@ -54,13 +68,27 @@ Find a map by ID
 Find a map by string ID
 `https://apibeta.deeeep.io/maps/s/<string_id>`
 
-Find a map by creator
+Find maps by creator
 `https://apibeta.deeeep.io/maps/u/<userid>[page][count][orderBy][period][direction]`
 
 Examples
 `https://apibeta.deeeep.io/maps/4643`
 `https://apibeta.deeeep.io/maps/s/fishy_ffa`
 `https://apibeta.deeeep.io/maps/u/644652?page=1&count=1&orderBy=updated_at&direction=ASC`
+
+### pets
+- `<id>` — Number ID of a pet. 
+- `<userid>` — ID of user. Username doesn't work. 
+
+Find a pet by ID
+`https://apibeta.deeeep.io/pets/<id>`
+
+Find pets by creator
+^Currently does not work^
+`https://apibeta.deeeep.io/pets/creator/<userid>`
+
+Examples
+`https://apibeta.deeeep.io/emotes/18`
 
 ### playHistories
 - `<userid>` — ID of user. Username doesn't work. 
