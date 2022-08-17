@@ -145,7 +145,7 @@ Walking animals can alt + click to get off the ground
 ```
 var ctrl_overlay = document.createElement('div')
 document.querySelector('div.game').insertBefore(ctrl_overlay, document.querySelector('div.game').children[0])
-ctrl_overlay.outerHTML = '<div id="ctrl-overlay" style="width: 100%;height: 100%;position: absolute display: block;z-index:10000;pointer-events:none;"></div>'
+ctrl_overlay.outerHTML = '<div id="ctrl-overlay" style="width: 100%;height: 100%;position: absolute;display: block;z-index:10000;pointer-events:none;"></div>'
 function showCtrlOverlay(e) {
     if (e.ctrlKey || e.altKey) {
         if (game.currentScene.myAnimal._visibleFishLevel != 101) {
