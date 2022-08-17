@@ -106,10 +106,14 @@ Examples
 
 ### skins
 - `<skinid>` — ID of skin, should be a number. 
-- `<creatorid>` — ID of skin creator
+- `<animalid>` — ID of animal, should be a number. 
+- `<creatorid>` — ID of skin creator. 
 
 Get a skin by ID
 `https://apibeta.deeeep.io/skins/<skinid>`
+
+Get skins by animal
+`https://apibeta.deeeep.io/skins?<animalid>`
 
 Get skins by creator
 `https://apibeta.deeeep.io/skins/creator/<creatorid>`
@@ -119,6 +123,7 @@ Skin must be in the game in order to use `Get skins by creator`.
 
 Examples
 `https://apibeta.deeeep.io/skins/11829`
+`https://apibeta.deeeep.io/skins?animalId=7`
 `https://apibeta.deeeep.io/skins/creator/546829`
 
 ### users
