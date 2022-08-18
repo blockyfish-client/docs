@@ -6,6 +6,10 @@ image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfis
 ---
 # Changelogs
 
+### v1.4.0 Multiboxing/target lock support
+- Use `/settarget <id>` to lock on to an animal
+- Fixed chat message duplication when using quick chat
+
 ### v1.3.5 Slash commands and anti-hiding
 - See all hiding animals, their name, and their stats. 
 - Press `/` to quickly use a slash command. Totally did not copy a certain 3D block building game. 
