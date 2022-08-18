@@ -147,7 +147,7 @@ var ctrl_overlay = document.createElement('div')
 document.querySelector('div.game').insertBefore(ctrl_overlay, document.querySelector('div.game').children[0])
 ctrl_overlay.outerHTML = '<div id="ctrl-overlay" style="width: 100%;height: 100%;position: absolute;display: block;z-index:10000;pointer-events:none;"></div>'
 function showCtrlOverlay(e) {
-    if (e.ctrlKey || e.altKey) {
+    if (e.ctrlKey || e.metaKey || e.altKey) {
         if (game.currentScene.myAnimal._visibleFishLevel != 101) {
             document.getElementById('ctrl-overlay').style.pointerEvents = 'all'
         }
@@ -182,7 +182,7 @@ function(e) {
     false);
     window.addEventListener("click",
     function(e) {
-        if (e.ctrlKey) {
+        if (e.ctrlKey || e.metaKey) {
             if (e.shiftKey && (game.currentScene.myAnimal._visibleFishLevel == 109 || game.currentScene.myAnimal._visibleFishLevel == 107)) {
                 console.log('hi')
                 superShot()
@@ -201,7 +201,7 @@ function(e) {
     false);
     window.addEventListener("keyup",
     function(e) {
-        if (!e.ctrlKey && !e.altKey) {
+        if (!e.ctrlKey || e.metaKey && !e.altKey) {
         document.getElementById('ctrl-overlay').style.pointerEvents = 'none'
     }
 },
