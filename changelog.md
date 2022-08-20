@@ -6,6 +6,10 @@ image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfis
 ---
 # Changelogs
 
+### v1.4.1 Multibox bug fix
+- Added `new window` button. 
+- Fixed an issue where nothing works in secondary windows. 
+
 ### v1.4.0 Multiboxing/target lock support
 - Use `/settarget <id>` to lock on to an animal
 - Fixed chat message duplication when using quick chat
