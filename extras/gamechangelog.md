@@ -3,6 +3,7 @@ icon: chevron-right
 order: 999
 title: Deeeep.io Changelogs
 image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
+description: All of Deeeep.io changelogs put together chronologically for you :)
 ---
 # Changelogs
 
