@@ -6,6 +6,15 @@ image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfis
 ---
 # Changelogs
 
+### v1.5.1 New hacks
+- Animal always on top, even over foreground props
+- Aim assist. Shows a line where your trajectory will be. Works on the following:
+  - Goblin shark
+  - Japanese spider crab
+  - Sea otter
+  - Archerfish
+- Added a `/help` command to show all available slash commands. 
+
 ### v1.5.0 Custom theme
 - Togglable custom theme
 
