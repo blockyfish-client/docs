@@ -1,25 +1,10 @@
 ---
-icon: gift
-title: Extras
-order: 996
+icon: chevron-right
+order: 1000
+title: Deeeep.io API
 image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfishclientbanner.png
 ---
-# Extra stuff
-Extra things not related to Blockyfish Client but related to Deeeep.io in general. 
-
-## Mapmaker
-Deeeep.io Mapmaker can be found [here](https://mapmaker.deeeep.io)
-
-### Image Tracing
-Useful for making Mapmaker Arts based on existing image. 
-Change the width, top, and left value according to your needs
-```html
-<div class="overlay" style="opacity: 0.5;position: absolute;width: 800px;top: 125px;left: 475px;pointer-events: none;">
-        <img src="YOUR IMAGE URL">
-</div>
-```
-
-## API
+# API
 !!!warning
 Still incomplete
 !!!
@@ -31,7 +16,7 @@ Terminology:
 Required perimeter `<>`
 Optional perimeter `[]`
 
-### animals
+## animals
 - `<name_or_id>` — Animal ID or name, value between `0` to `120`. 
 
 Get animal by ID or name
@@ -41,7 +26,7 @@ Examples
 `https://apibeta.deeeep.io/animals/fish`
 `https://apibeta.deeeep.io/animals/0`
 
-### emotes
+## emotes
 - `<id>` — Number ID of an emote. 
 - `<userid>` — ID of user. Username doesn't work. 
 
@@ -55,7 +40,7 @@ Find emotes by creator
 Examples
 `https://apibeta.deeeep.io/emotes/36`
 
-### maps
+## maps
 - `<id>` — Number ID of a map. 
 - `<string_id>` — String ID of a map. 
 - `<userid>` — ID of user. Username doesn't work. 
@@ -79,7 +64,7 @@ Examples
 `https://apibeta.deeeep.io/maps/s/fishy_ffa`
 `https://apibeta.deeeep.io/maps/u/644652?page=1&count=1&orderBy=updated_at&direction=ASC`
 
-### pets
+## pets
 - `<id>` — Number ID of a pet. 
 - `<userid>` — ID of user. Username doesn't work. 
 
@@ -93,7 +78,7 @@ Find pets by creator
 Examples
 `https://apibeta.deeeep.io/emotes/18`
 
-### playHistories
+## playHistories
 - `<userid>` — ID of user. Username doesn't work. 
 - `[gmId]` — Gamemode ID, from `1` to `6`. 
 - `[animalId]` — Animal ID, `0` to `120`. 
@@ -107,7 +92,7 @@ Examples
 `https://apibeta.deeeep.io/playHistories/u/5?gmId=1&animalId=1&order=score`
 `https://apibeta.deeeep.io/playHistories/u/5?gmId=6&order=latest`
 
-### skins
+## skins
 - `<skinid>` — ID of skin, should be a number. 
 - `<animalid>` — ID of animal, should be a number. 
 - `<creatorid>` — ID of skin creator. 
@@ -129,7 +114,7 @@ Examples
 `https://apibeta.deeeep.io/skins?animalId=7`
 `https://apibeta.deeeep.io/skins/creator/546829`
 
-### users
+## users
 - `<userid>` — ID of user. Username doesn't work. 
 - `<userid>` — Username of user. ID doesn't work. 
 - `[ref]` — can only be `profile`
@@ -144,7 +129,7 @@ Examples
 `https://apibeta.deeeep.io/users/5`
 `https://apibeta.deeeep.io/users/u/ItsGrandPi?ref=profile`
 
-### userStats
+## userStats
 - `<userid>` — ID of user. Username doesn't work.
 
 Get userstats by ID
