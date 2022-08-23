@@ -106,14 +106,13 @@ game.viewport.clampZoom({
 ### **Anti-ink and anti-darkness (in deep)**
 [!badge variant="info" text="Android"]
 ```
-setInterval(function () {
-    game.currentScene.terrainManager.shadow.setShadowSize(1000000)
-}, 10);
+game.currentScene.terrainManager.shadow.setShadowSize(1000000)
+game.currentScene.terrainManager.shadow.setShadowSize = function() {}
 ```
 ### **Anti-megamouth (no more flash-bangs)**
 [!badge variant="info" text="Android"]
 ```
-game.currentScene.toggleFlash = function() {console.log('xd you got flash-banged but a hack saved you')}
+game.currentScene.toggleFlash = function() {}
 ```
 ### **Visible hiding animals (buggy)**
 [!badge variant="info" text="Android"]
@@ -132,6 +131,12 @@ game.currentScene.entityManager.animalsList[i].sprite.scale.y = game.currentScen
 })
 }
 }, 10);
+```
+
+### **Names and animals always on top**
+```
+game.currentScene.namesLayer.zOrder = 998
+game.currentScene.animalsContainer.zOrder = 999
 ```
 
 ### **Boost hacks**
@@ -210,29 +215,32 @@ false);
 
 ### **All in one hacks**
 ```
-game.currentScene.toggleFlash = function() {console.log('xd you got flash-banged but a hack saved you')}
-setInterval(function () {
-for (let i = 0; i < game.currentScene.terrainManager.terrains.length; i++) {
-    game.currentScene.terrainManager.terrains[i].alpha = 0.5;
-}
-game.currentScene.ceilingsContainer.alpha = 0.3
-game.viewport.clampZoom({
-    minWidth: 0,
-    maxWidth: 1e7,
-})
+game.currentScene.toggleFlash = function() {}
 game.currentScene.terrainManager.shadow.setShadowSize(1000000)
-game.currentScene.myAnimal.handleHide = (function(){
-game.currentScene.myAnimal.inner.alpha = 0.6
-game.currentScene.myAnimal.sprite.scale.x = game.currentScene.myAnimal.origScale.x * 0.7
-game.currentScene.myAnimal.sprite.scale.y = game.currentScene.myAnimal.origScale.y * 0.7
-})
-for (let i = 0; i < game.currentScene.entityManager.animalsList.length; i++) {
-game.currentScene.entityManager.animalsList[i].handleHide = (function(){
-game.currentScene.entityManager.animalsList[i].inner.alpha = 0.6
-game.currentScene.entityManager.animalsList[i].sprite.scale.x = game.currentScene.entityManager.animalsList[i].origScale.x * 0.7
-game.currentScene.entityManager.animalsList[i].sprite.scale.y = game.currentScene.entityManager.animalsList[i].origScale.y * 0.7
-})
-}
+game.currentScene.terrainManager.shadow.setShadowSize = function() {}
+game.currentScene.namesLayer.zOrder = 998
+game.currentScene.animalsContainer.zOrder = 999
+setInterval(function () {
+    for (let i = 0; i < game.currentScene.terrainManager.terrains.length; i++) {
+        game.currentScene.terrainManager.terrains[i].alpha = 0.5;
+    }
+    game.currentScene.ceilingsContainer.alpha = 0.3
+    game.viewport.clampZoom({
+        minWidth: 0,
+        maxWidth: 1e7,
+    })
+    game.currentScene.myAnimal.handleHide = (function(){
+        game.currentScene.myAnimal.inner.alpha = 0.6
+        game.currentScene.myAnimal.sprite.scale.x = game.currentScene.myAnimal.origScale.x * 0.7
+        game.currentScene.myAnimal.sprite.scale.y = game.currentScene.myAnimal.origScale.y * 0.7
+    })
+    for (let i = 0; i < game.currentScene.entityManager.animalsList.length; i++) {
+        game.currentScene.entityManager.animalsList[i].handleHide = (function(){
+            game.currentScene.entityManager.animalsList[i].inner.alpha = 0.6
+            game.currentScene.entityManager.animalsList[i].sprite.scale.x = game.currentScene.entityManager.animalsList[i].origScale.x * 0.7
+            game.currentScene.entityManager.animalsList[i].sprite.scale.y = game.currentScene.entityManager.animalsList[i].origScale.y * 0.7
+        })
+    }
 }, 10);
 ```
 
