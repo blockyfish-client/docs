@@ -6,6 +6,12 @@ image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfis
 ---
 # Changelogs
 
+### v1.5.2 Performance Optimization
+- Less resource intensive
+- Terrain is now no longer transparent, but food and animals will still be shown on top
+- Animal name and stats are not visible while digging
+- Added offline screen
+
 ### v1.5.1 New hacks
 - Animal always on top, even over foreground props
 - Aim assist. Shows a line where your trajectory will be. Works on the following:
