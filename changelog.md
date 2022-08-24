@@ -6,6 +6,9 @@ image: https://raw.githubusercontent.com/blockyfish-client/Assets/main/blockyfis
 ---
 # Changelogs
 
+### v1.5.3 Aim assist
+- Aim assist. Press Z to toggle. 
+
 ### v1.5.2 Performance Optimization
 - Less resource intensive
 - Terrain is now no longer transparent, but food and animals will still be shown on top
