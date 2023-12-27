@@ -8,7 +8,7 @@ When your plugin does not work as expected, you may need to debug it. The follow
 
 First, you should run Blockyfish client in debug mode.
 
-Make sure you have already downloaded the source code, if not, please see [here](/tutorial/prerequisites#blockyfish-client).
+Make sure you have already downloaded the source code, if not, please see [here](../prerequisites#blockyfish-client).
 
 You can do that by first opening the directory that contains the downloaded Blockyfish client source code and running the following:
 

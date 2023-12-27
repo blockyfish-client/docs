@@ -67,7 +67,7 @@ npm install
 
 #### Running Blockyfish client in debug mode
 
-In debug mode, DevTools will be opened so you can use it for testing various things. Learn more about it [here](/tutorial/testing-and-debugging/#loading-external-plugins)
+In debug mode, DevTools will be opened so you can use it for testing various things. Learn more about it [here](../testing-and-debugging/#loading-external-plugins)
 
 ```sh
 npm run test
