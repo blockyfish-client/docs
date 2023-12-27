@@ -1,14 +1,14 @@
 <script>
-	setInterval(() => {
-		document.querySelectorAll("a").forEach((link) => {
-			try {
-				if (!link.getAttribute("href").startsWith("/docs")) {
-					let oldHref = link.href;
-					let newHref = oldHref.replace(new RegExp(`${window.location.origin}(/docs)?`), "/docs");
-					link.href = newHref;
-					link.setAttribute("href", newHref);
-				}
-			} catch {}
-		});
-	}, 50);
+	// setInterval(() => {
+	// 	document.querySelectorAll("a").forEach((link) => {
+	// 		try {
+	// 			if (!link.getAttribute("href").startsWith("/docs")) {
+	// 				let oldHref = link.href;
+	// 				let newHref = oldHref.replace(new RegExp(`${window.location.origin}(/docs)?`), "/docs");
+	// 				link.href = newHref;
+	// 				link.setAttribute("href", newHref);
+	// 			}
+	// 		} catch {}
+	// 	});
+	// }, 50);
 </script>
